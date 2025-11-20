@@ -1,0 +1,34 @@
+# Membuat dictionary daftar kontak
+kontak = {
+    "Ari": "0812678888",
+    "Dina": "0876777776"
+}
+
+# 1. Tampilkan kontaknya Ari
+print("Kontak Ari:", kontak["Ari"])
+
+# 2. Tambah kontak baru: Riko - 0876545444
+kontak["Riko"] = "0876545444"
+
+# 3. Ubah kontak Dina menjadi nomor baru: 0889999776
+kontak["Dina"] = "0889999776"
+
+# 4. Tampilkan semua Nama (key)
+print("\nSemua Nama:")
+for nama in kontak.keys():
+    print(nama)
+
+# 5. Tampilkan semua Nomor (value)
+print("\nSemua Nomor:")
+for nomor in kontak.values():
+    print(nomor)
+
+# 6. Tampilkan daftar Nama dan Nomornya
+print("\nDaftar Nama dan Nomornya:")
+for nama, nomor in kontak.items():
+    print(nama, ":", nomor)
+
+# 7. Hapus kontak Dina
+del kontak["Dina"]
+
+print("\nKontak setelah Dina dihapus:", kontak)
